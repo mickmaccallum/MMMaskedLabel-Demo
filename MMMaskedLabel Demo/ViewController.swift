@@ -7,12 +7,27 @@
 //
 
 import UIKit
+import MMMaskedLabel
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        view.backgroundColor = UIColor.blueColor()
+        
+        let label = MMMaskedLabel(frame: CGRect(x: 0.0, y: 0.0, width: view.bounds.width * 0.8, height: 80.0))
+        label.center = view.center
+        label.text = "cooooool"
+        label.backgroundColor = UIColor.redColor()
+        
+        view.addSubview(label)
     }
 
     override func didReceiveMemoryWarning() {

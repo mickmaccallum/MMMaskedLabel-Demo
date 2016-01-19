@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0040F1A81C4E83930076F176"
-               BuildableName = "MMMaskedLabel Demo.app"
-               BlueprintName = "MMMaskedLabel Demo"
+               BlueprintIdentifier = "0040F1C21C4E83AD0076F176"
+               BuildableName = "MMMaskedLabel.framework"
+               BlueprintName = "MMMaskedLabel"
                ReferencedContainer = "container:MMMaskedLabel Demo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0040F1A81C4E83930076F176"
-            BuildableName = "MMMaskedLabel Demo.app"
-            BlueprintName = "MMMaskedLabel Demo"
-            ReferencedContainer = "container:MMMaskedLabel Demo.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0040F1A81C4E83930076F176"
-            BuildableName = "MMMaskedLabel Demo.app"
-            BlueprintName = "MMMaskedLabel Demo"
+            BlueprintIdentifier = "0040F1C21C4E83AD0076F176"
+            BuildableName = "MMMaskedLabel.framework"
+            BlueprintName = "MMMaskedLabel"
             ReferencedContainer = "container:MMMaskedLabel Demo.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0040F1A81C4E83930076F176"
-            BuildableName = "MMMaskedLabel Demo.app"
-            BlueprintName = "MMMaskedLabel Demo"
+            BlueprintIdentifier = "0040F1C21C4E83AD0076F176"
+            BuildableName = "MMMaskedLabel.framework"
+            BlueprintName = "MMMaskedLabel"
             ReferencedContainer = "container:MMMaskedLabel Demo.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

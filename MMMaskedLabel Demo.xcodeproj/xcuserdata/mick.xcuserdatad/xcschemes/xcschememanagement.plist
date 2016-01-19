@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>MMMaskedLabel.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>0040F1A81C4E83930076F176</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0040F1C21C4E83AD0076F176</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -12,7 +12,35 @@
 		0040F1B21C4E83930076F176 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0040F1B01C4E83930076F176 /* Main.storyboard */; };
 		0040F1B41C4E83930076F176 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0040F1B31C4E83930076F176 /* Assets.xcassets */; };
 		0040F1B71C4E83930076F176 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0040F1B51C4E83930076F176 /* LaunchScreen.storyboard */; };
+		0040F1C61C4E83AD0076F176 /* MMMaskedLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 0040F1C51C4E83AD0076F176 /* MMMaskedLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0040F1CA1C4E83AD0076F176 /* MMMaskedLabel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0040F1C31C4E83AD0076F176 /* MMMaskedLabel.framework */; };
+		0040F1CB1C4E83AD0076F176 /* MMMaskedLabel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0040F1C31C4E83AD0076F176 /* MMMaskedLabel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0040F1D11C4E83BD0076F176 /* MMMaskedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0040F1D01C4E83BD0076F176 /* MMMaskedLabel.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0040F1C81C4E83AD0076F176 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0040F1A11C4E83930076F176 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0040F1C21C4E83AD0076F176;
+			remoteInfo = MMMaskedLabel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0040F1CF1C4E83AD0076F176 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0040F1CB1C4E83AD0076F176 /* MMMaskedLabel.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0040F1A91C4E83930076F176 /* MMMaskedLabel Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MMMaskedLabel Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +50,22 @@
 		0040F1B31C4E83930076F176 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0040F1B61C4E83930076F176 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0040F1B81C4E83930076F176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0040F1C31C4E83AD0076F176 /* MMMaskedLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MMMaskedLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0040F1C51C4E83AD0076F176 /* MMMaskedLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMMaskedLabel.h; sourceTree = "<group>"; };
+		0040F1C71C4E83AD0076F176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0040F1D01C4E83BD0076F176 /* MMMaskedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMMaskedLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0040F1A61C4E83930076F176 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0040F1CA1C4E83AD0076F176 /* MMMaskedLabel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0040F1BF1C4E83AD0076F176 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				0040F1AB1C4E83930076F176 /* MMMaskedLabel Demo */,
+				0040F1C41C4E83AD0076F176 /* MMMaskedLabel */,
 				0040F1AA1C4E83930076F176 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				0040F1A91C4E83930076F176 /* MMMaskedLabel Demo.app */,
+				0040F1C31C4E83AD0076F176 /* MMMaskedLabel.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,7 +106,28 @@
 			path = "MMMaskedLabel Demo";
 			sourceTree = "<group>";
 		};
+		0040F1C41C4E83AD0076F176 /* MMMaskedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				0040F1C51C4E83AD0076F176 /* MMMaskedLabel.h */,
+				0040F1D01C4E83BD0076F176 /* MMMaskedLabel.swift */,
+				0040F1C71C4E83AD0076F176 /* Info.plist */,
+			);
+			path = MMMaskedLabel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0040F1C01C4E83AD0076F176 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0040F1C61C4E83AD0076F176 /* MMMaskedLabel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		0040F1A81C4E83930076F176 /* MMMaskedLabel Demo */ = {
@@ -74,15 +137,35 @@
 				0040F1A51C4E83930076F176 /* Sources */,
 				0040F1A61C4E83930076F176 /* Frameworks */,
 				0040F1A71C4E83930076F176 /* Resources */,
+				0040F1CF1C4E83AD0076F176 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0040F1C91C4E83AD0076F176 /* PBXTargetDependency */,
 			);
 			name = "MMMaskedLabel Demo";
 			productName = "MMMaskedLabel Demo";
 			productReference = 0040F1A91C4E83930076F176 /* MMMaskedLabel Demo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		0040F1C21C4E83AD0076F176 /* MMMaskedLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0040F1CC1C4E83AD0076F176 /* Build configuration list for PBXNativeTarget "MMMaskedLabel" */;
+			buildPhases = (
+				0040F1BE1C4E83AD0076F176 /* Sources */,
+				0040F1BF1C4E83AD0076F176 /* Frameworks */,
+				0040F1C01C4E83AD0076F176 /* Headers */,
+				0040F1C11C4E83AD0076F176 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MMMaskedLabel;
+			productName = MMMaskedLabel;
+			productReference = 0040F1C31C4E83AD0076F176 /* MMMaskedLabel.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +178,9 @@
 				ORGANIZATIONNAME = "Michael MacCallum";
 				TargetAttributes = {
 					0040F1A81C4E83930076F176 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					0040F1C21C4E83AD0076F176 = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
@@ -113,6 +199,7 @@
 			projectRoot = "";
 			targets = (
 				0040F1A81C4E83930076F176 /* MMMaskedLabel Demo */,
+				0040F1C21C4E83AD0076F176 /* MMMaskedLabel */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +215,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0040F1C11C4E83AD0076F176 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,7 +234,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0040F1BE1C4E83AD0076F176 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0040F1D11C4E83BD0076F176 /* MMMaskedLabel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0040F1C91C4E83AD0076F176 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0040F1C21C4E83AD0076F176 /* MMMaskedLabel */;
+			targetProxy = 0040F1C81C4E83AD0076F176 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0040F1B01C4E83930076F176 /* Main.storyboard */ = {
@@ -247,6 +357,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "MMMaskedLabel Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Michael-MacCallum.MMMaskedLabel-Demo";
@@ -258,10 +369,56 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "MMMaskedLabel Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Michael-MacCallum.MMMaskedLabel-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0040F1CD1C4E83AD0076F176 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MMMaskedLabel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.0x7fffffff.MMMaskedLabel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0040F1CE1C4E83AD0076F176 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MMMaskedLabel/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.0x7fffffff.MMMaskedLabel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -282,6 +439,14 @@
 			buildConfigurations = (
 				0040F1BC1C4E83930076F176 /* Debug */,
 				0040F1BD1C4E83930076F176 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0040F1CC1C4E83AD0076F176 /* Build configuration list for PBXNativeTarget "MMMaskedLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0040F1CD1C4E83AD0076F176 /* Debug */,
+				0040F1CE1C4E83AD0076F176 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
